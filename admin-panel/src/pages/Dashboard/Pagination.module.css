@@ -1,0 +1,38 @@
+.pagination{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    /* margin-bottom: 100px; */
+    border-radius: 42px;
+    color: #fff ;
+    cursor: pointer;
+}
+.selecteds{
+    /* width: 80px; */
+    background-color: #3874ff;
+    color: #fff;
+    border: none;
+    
+    border-radius: 42px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.pagination p{
+    display: inline-block;
+    border: 1px solid #8D8D8D80;
+    width: 25px;
+    text-align: center;
+    border-radius: 42px;
+    color:#8D8D8D80;
+}
+.disabled{
+    opacity: 0.3;
+}
+.selected{
+color: #8D8D8D80;
+    background-color: #3874ff;
+    
+}

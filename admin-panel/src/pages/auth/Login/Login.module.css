@@ -1,0 +1,90 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.card {
+  width: 470px;
+  height: 523px;
+  background: #ffffff;
+  border-radius: 40px;
+  border: 1px #e4e4e4;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  
+}
+.title {
+  font-family: Kalameh;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 31px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #282828;
+  margin-bottom: 16px;
+}
+.logo {
+  width: 80px;
+  margin: 0 auto 10px;
+  display: block;
+}
+.formTitle {
+  font-family: "Vazirmatn";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  line-height: 100%;
+  text-align: right;
+  color: #282828;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  width: 400px;
+  gap: 10px;
+  font-family: "Vazirmatn";
+  padding: 22px 15px 22px 15px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.form button {
+  width: 427px;
+  padding: 10px;
+  font-family: "Vazirmatn";
+  border-radius: 15px;
+  gap: 10px;
+  background-color: #55a3f0;
+  margin-top: 16px;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.registerLink {
+  font-family: "Vazirmatn";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  display: block;
+  text-align: right;
+ padding-right: 26px;
+  color: #3a8bed;
+}

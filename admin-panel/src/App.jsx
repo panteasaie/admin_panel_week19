@@ -10,26 +10,26 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-      
         <Route
           path="/"
           element={
-            token
-              ? <Navigate to="/login" replace />  
-              : <Navigate to="/register" replace />  
+            token ? (
+              <Navigate to="/products" replace />
+            ) : (
+              <Navigate to="/register" replace />
+            )
           }
         />
 
-      
         <Route path="/register" element={<RegistrationForm />} />
 
-        
         <Route path="/login" element={<Login />} />
 
-        
-        <Route path="/products" element={<Products />} />
+        <Route
+          path="/products"
+          element={token ? <Products /> : <Navigate to="/login" replace />}
+        />
 
-        
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

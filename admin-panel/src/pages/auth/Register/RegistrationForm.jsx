@@ -5,7 +5,7 @@ import {useForm}  from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { registrationSchema } from "../../../validation/registrationSchema";
 import registerUser from '../../../services/authServeice'
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 function RegistrationForm() {
       const navigate= useNavigate()
@@ -75,7 +75,7 @@ function RegistrationForm() {
           <button type="submit">ثبت نام</button>
           
         </form>
-        <span className={styles.registerLink}>حساب کاربری دارید؟</span>
+        <Link to="/login" className={styles.registerLink}>حساب کاربری دارید؟</Link>
       </div>
     </div>
   );

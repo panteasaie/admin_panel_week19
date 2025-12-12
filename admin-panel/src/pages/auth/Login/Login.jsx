@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "../../../validation/loginSchema";
 import { loginUser } from "../../../services/authServeice";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Login() {
   const {
   register,
@@ -51,7 +51,7 @@ const onSubmit=async(values)=>{
           )}
           <button type="submit">ورود</button>
         </form>
-        <span className={styles.registerLink}>ایجاد حساب کاربری!</span>
+        <Link to="/register" className={styles.registerLink}>ایجاد حساب کاربری!</Link>
       </div>
     </div>
   );
